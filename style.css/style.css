@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 98.7vw;
+  height: 109.5vh;
+}
+@media screen and (max-width: 636px) {
+  body {
+    width: 98.7vw;
+    height: 100vh;
+  }
+}
+body header {
+  width: 100%;
+  height: 14.5vh;
+}
+@media screen and (max-width: 627px) {
+  body header {
+    width: 100%;
+    height: 23.3vh;
+  }
+}
+@media screen and (max-width: 433px) {
+  body header {
+    width: 100%;
+    height: 17vh;
+  }
+}
+@media screen and (max-width: 399px) {
+  body header {
+    width: 100%;
+    height: 13vh;
+  }
+}
+@media screen and (max-width: 379px) {
+  body header {
+    width: 100%;
+    height: 9vh;
+  }
+}
+body main {
+  width: 100%;
+  height: 85vh;
+}
+@media screen and (max-width: 627px) {
+  body main {
+    width: 100%;
+    height: 94vh;
+  }
+}
+@media screen and (max-width: 535px) {
+  body main {
+    width: 100%;
+    height: 100vh;
+  }
+}
+body footer {
+  width: 100%;
+  height: 10vh;
+}
+@media screen and (max-width: 636px) {
+  body footer {
+    width: 100%;
+    height: 5h;
+  }
+}
+@media screen and (max-width: 433px) {
+  body footer {
+    width: 100%;
+    height: 5vh;
+  }
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar .container {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  background-color: black;
+  gap: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (max-width: 433px) {
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.15em;
+  }
+}
+@media screen and (max-width: 379px) {
+  .navbar .container {
+    gap: 0.5em;
+  }
+}
+@media screen and (max-width: 337px) {
+  .navbar .container {
+    gap: 0.15em;
+  }
+}
+.navbar .container .logo {
+  height: 90px;
+  width: 120px;
+}
+@media screen and (max-width: 399px) {
+  .navbar .container .logo {
+    height: 70px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 379px) {
+  .navbar .container .logo {
+    height: 50px;
+    width: 80px;
+  }
+}
+.navbar .container .item {
+  color: white;
+  text-decoration: none;
+  font-family: "Courier New";
+  font-size: 1rem;
+}
+.navbar .container .item:hover {
+  color: red;
+}
+@media screen and (max-width: 433px) {
+  .navbar .container .item {
+    color: white;
+    text-decoration: none;
+    font-family: "Courier New";
+    font-size: 0.6rem;
+  }
+  .navbar .container .item:hover {
+    color: red;
+  }
+}
+@media screen and (max-width: 379px) {
+  .navbar .container .item {
+    color: white;
+    text-decoration: none;
+    font-family: "Courier New";
+    font-size: 0.5rem;
+  }
+  .navbar .container .item:hover {
+    color: red;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 98.7vw;
+  height: 109.5vh;
+}
+@media screen and (max-width: 636px) {
+  body {
+    width: 98.7vw;
+    height: 100vh;
+  }
+}
+body header {
+  width: 100%;
+  height: 14.5vh;
+}
+@media screen and (max-width: 627px) {
+  body header {
+    width: 100%;
+    height: 23.3vh;
+  }
+}
+@media screen and (max-width: 433px) {
+  body header {
+    width: 100%;
+    height: 17vh;
+  }
+}
+@media screen and (max-width: 399px) {
+  body header {
+    width: 100%;
+    height: 13vh;
+  }
+}
+@media screen and (max-width: 379px) {
+  body header {
+    width: 100%;
+    height: 9vh;
+  }
+}
+body main {
+  width: 100%;
+  height: 85vh;
+}
+@media screen and (max-width: 627px) {
+  body main {
+    width: 100%;
+    height: 94vh;
+  }
+}
+@media screen and (max-width: 535px) {
+  body main {
+    width: 100%;
+    height: 100vh;
+  }
+}
+body footer {
+  width: 100%;
+  height: 10vh;
+}
+@media screen and (max-width: 636px) {
+  body footer {
+    width: 100%;
+    height: 5h;
+  }
+}
+@media screen and (max-width: 433px) {
+  body footer {
+    width: 100%;
+    height: 5vh;
+  }
+}
+
+.main .contenedorHero {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7098039216), rgba(0, 0, 0, 0.7254901961)), url("../assets/img/imagenSublimacionPpal.jpg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Courier New";
+}
+.main .contenedorHero .texto {
+  color: white;
+}
+.main .contenedorHero .texto .title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.main .contenedorHero .texto .paragraph {
+  font-size: 1rem;
+}
+.main .contenedorHero .texto .button {
+  height: 64px;
+  min-width: 150px;
+  border: none;
+  border-radius: 40px;
+  margin: 8px;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.5s all ease-in-out;
+}
+.main .contenedorHero .texto .button:hover {
+  cursor: pointer;
+}
+.main .contenedorHero .texto .button a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Courier New";
+}
+
+.main2 .contenedorMain2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7098039216), rgba(0, 0, 0, 0.7254901961)), url("../assets/img/impresion.jpeg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Courier New";
+}
+.main2 .contenedorMain2 .texto h2 {
+  color: white;
+  text-align: center;
+}
+.main2 .contenedorMain2 .texto p {
+  font-size: pixeles-rem(18);
+  color: white;
+  text-align: center;
+}
+.main2 .contenedorMain2 .contenedorTarjeta {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  margin: auto;
+  font-family: "Courier New";
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main2 .contenedorMain2 .contenedorTarjeta .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+@media screen and (max-width: 1124px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card {
+    width: 220px;
+    height: 330px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 729px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card {
+    width: 180px;
+    height: 330px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 607px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card {
+    width: 90%;
+    height: 100px;
+  }
+}
+.main2 .contenedorMain2 .contenedorTarjeta .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.main2 .contenedorMain2 .contenedorTarjeta .card img {
+  width: 330px;
+  height: 220px;
+}
+@media screen and (max-width: 1124px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card img {
+    width: 220px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 729px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 607px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card img {
+    width: 0px;
+    height: 0px;
+  }
+}
+.main2 .contenedorMain2 .contenedorTarjeta .card h4 {
+  color: white;
+}
+@media screen and (max-width: 547px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card h4 {
+    font-size: 0.9;
+  }
+}
+.main2 .contenedorMain2 .contenedorTarjeta .card p {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 607px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 607px) {
+  .main2 .contenedorMain2 .contenedorTarjeta .card p {
+    font-size: 0.7rem;
+  }
+}
+.main2 .contenedorMain2 .video iframe {
+  width: 600px;
+  height: 300px;
+}
+@media screen and (max-width: 636px) {
+  .main2 .contenedorMain2 .video iframe {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+}
+
+.main3 {
+  background: #181818;
+  font-family: "Courier New";
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 1.5em;
+}
+.main3 .formulario {
+  width: 900px;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+@media screen and (max-width: 920px) {
+  .main3 .formulario {
+    width: auto;
+    height: 70%;
+  }
+}
+.main3 .formulario h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+@media screen and (max-width: 920px) {
+  .main3 .formulario h1 {
+    font-size: 1.5rem;
+  }
+}
+.main3 .formulario .formularioGral {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+@media screen and (max-width: 920px) {
+  .main3 .formulario .formularioGral {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    align-items: start;
+  }
+}
+.main3 .formulario .formularioGral .formularioDeContacto {
+  background: #222222;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form p {
+  margin: 0;
+  padding: 1rem;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form p label {
+  display: block;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form p input {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form .block input {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form .block textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form .block button {
+  border-bottom: 1px solid #d63031;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+}
+.main3 .formulario .formularioGral .formularioDeContacto form .block button:hover, .main3 .formulario .formularioGral .formularioDeContacto form .block button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+.main3 .formulario .formularioGral .InfoDeContacto {
+  background-color: #000;
+}
+.main3 .formulario .formularioGral .InfoDeContacto h3 {
+  text-align: center;
+}
+.main3 .formulario .formularioGral .InfoDeContacto ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 751px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.footer .logo {
+  height: 50px;
+  width: 60px;
+}
+@media screen and (max-width: 314px) {
+  .footer .logo {
+    height: 25px;
+    width: 40px;
+  }
+}
+.footer .alPie {
+  font-family: "Courier New";
+  font-size: 1rem;
+  color: white;
+}
+@media screen and (max-width: 433px) {
+  .footer .alPie {
+    font-size: 0.8rem;
+  }
+}
+.footer span a {
+  color: white;
+  text-decoration: none;
+  font-family: "Courier New";
+  font-size: 1rem;
+}
+.footer span a:hover {
+  color: red;
+}
+@media screen and (max-width: 433px) {
+  .footer span a {
+    color: white;
+    text-decoration: none;
+    font-family: "Courier New";
+    font-size: 0.8rem;
+  }
+  .footer span a:hover {
+    color: red;
+  }
+}/*# sourceMappingURL=style.css.map */

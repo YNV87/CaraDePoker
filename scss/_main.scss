@@ -1,0 +1,257 @@
+@import '_mixins.scss';
+@import '_base.scss';
+
+.main{
+    .contenedorHero{
+        height: 100%;
+        background-image: linear-gradient(#000000b5,#000000b9), url("../assets/img/imagenSublimacionPpal.jpg");
+
+        @include crear-flexbox(center);
+    
+        @include arreglar-imagen;
+        font-family: $fuente;
+
+        .texto{
+            color:white;
+            .title{
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+            .paragraph{
+                font-size: 1rem;
+            }
+            .button{
+                height: 64px;
+                min-width: 150px;
+                border: none;
+                border-radius: 40px;
+                margin: 8px;
+                box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
+                transition: 0.5s all ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                }
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-family: $fuente;
+                }
+            }
+        }
+    }
+}
+
+.main2{
+    .contenedorMain2{
+        background-image: linear-gradient(#000000b5,#000000b9), url('../assets/img/impresion.jpeg');
+        @include crear-flexbox(center);
+        height: 100%;  
+        @include arreglar-imagen;
+        font-family: $fuente;                
+        .texto{
+            h2{
+                color:white;
+                text-align: center;
+            }
+            p{
+                font-size: pixeles-rem(18);
+                color:white;
+                text-align: center;
+            }
+        }
+
+
+        .contenedorTarjeta{
+            width: 100%;
+            max-width: 1200px;
+            height: 430px;
+            margin: auto;
+            font-family: $fuente;                
+            align-items: stretch;  
+            @include crear-flexbox(space-around);         
+            .card{
+                width: 330px;
+                height: 430px;
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                margin: 20px;
+                text-align: center;
+                transition: all 0.25s;
+                @include mediaQuery(1124px){
+                    width: 220px;
+                    height: 330px;
+                    margin: 10px;
+                }
+
+                @include mediaQuery(729px){
+                    width: 180px;
+                    height: 330px;
+                    margin: 10px;
+                }
+                @include mediaQuery(607px){
+                    width: 90%;
+                    height: 100px;
+                }
+                &:hover {
+                    transform: translateY(-15px);
+                    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+                }
+                img{
+                    width: 330px;
+                    height: 220px;
+                    @include mediaQuery(1124px){
+                        width: 220px;
+                        height: 180px;
+                    }
+                    @include mediaQuery(729px){
+                        width: 180px;
+                        height: 180px;
+                    }
+                     @include mediaQuery(607px){
+                        width: 0px;
+                        height: 0px;
+                    }
+                }
+                h4{
+                    color: white;
+                    @include mediaQuery(547px){
+                        font-size:0.9;
+                    }
+                }
+                p{  
+                    background-color: white;
+                    color:black;
+                    padding: 16px;
+                    font-size: 0.8rem;
+                    @include mediaQuery(607px){
+                        font-size: 0.7rem;
+                    }
+                    @include mediaQuery(607px){
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }    
+        .video{
+            iframe {
+                width: 600px;
+                height: 300px;
+            }
+        }
+        @include mediaQuery(636px){
+            .video{
+                iframe {
+                    width: 300px;
+                    height: 200px;
+                    margin-bottom: 10px;
+                }
+            }
+        }   
+    }
+}
+
+
+.main3{
+    background: #181818;
+    font-family: $fuente;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 1.5em;
+    
+
+    .formulario{
+        width: 900px ;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+        @include mediaQuery(920px){
+            width: auto ;
+            height: 70%;
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem; 
+            @include mediaQuery(920px){
+                font-size: 1.5rem; 
+            }
+        }
+       
+
+        .formularioGral{
+            box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            @include mediaQuery(920px){
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr;
+                align-items: start;
+            }
+            
+            .formularioDeContacto{
+                background: #222222;
+                form{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 0.5fr; 
+                    p{
+                        margin: 0;
+                        padding: 1rem;
+
+                        label {
+                            display: block;
+                        }
+                        input{
+                            @include reglon-formulario;
+                        }
+                    }
+                    .block{
+                        input{
+                            @include reglon-formulario;
+                        }
+                        textarea{
+                            @include reglon-formulario;
+                        }
+                        button{
+                            border-bottom: 1px solid #d63031;
+                            text-transform: uppercase;
+                            @include reglon-formulario;
+                            &:hover, &:focus{
+                                background: #d63031;
+                                color: #fff;
+                                transition: background-color 1s ease-out;
+                                outline: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .InfoDeContacto{
+                background-color: #000;
+                h3 {
+                    text-align: center;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    text-align: center;
+                }
+
+            }
+                        
+        }
+    }
+}
+
+
+
+
+
+
+
+

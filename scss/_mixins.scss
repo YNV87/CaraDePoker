@@ -1,0 +1,45 @@
+
+@mixin crear-flexbox($justify){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: $justify;
+}
+
+@mixin arreglar-imagen{
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    };
+}
+
+@mixin reglon-formulario{
+    width: 100%;
+    padding: .7em;
+    border: none;     
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+
+
+@mixin formato-enlace ($rem){
+    color:white;
+    text-decoration: none;
+    font-family: $fuente;
+    font-size: $rem;
+
+    &:hover{
+        color: red;
+    }
+}
+
+@mixin mediaQuery ($ancho){
+    @media screen and (max-width: #{$ancho}) {
+        @content;
+    }
+}

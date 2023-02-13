@@ -1,0 +1,66 @@
+@import 'mixins.scss';
+*{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body{
+    width: 98.7vw;
+    height: 109.5vh;
+    @include mediaQuery(636px){
+        width: 98.7vw;
+        height: 100vh;
+    }
+
+    header {
+        width: 100%;
+        height: 14.5vh; 
+        @include mediaQuery(627px){
+            width: 100%;
+            height: 23.3vh; 
+        }
+        @include mediaQuery(433px){
+            width: 100%;
+            height: 17vh; 
+        }
+        @include mediaQuery(399px){
+            width: 100%;
+            height: 13vh; 
+        }
+        @include mediaQuery(379px){
+            width: 100%;
+            height: 9vh; 
+        }  
+    }
+    main{
+        width: 100%;
+        height: 85vh;
+        @include mediaQuery(627px){
+            width: 100%;
+            height: 94vh; 
+        }
+        @include mediaQuery(535px){
+            width: 100%;
+            height: 100vh; 
+        }
+
+    }
+    footer{
+        width: 100%;
+        height: 10vh;
+        @include mediaQuery(636px){
+            width: 100%;
+            height: 5h; 
+        }
+        @include mediaQuery(433px){
+            width: 100%;
+            height: 5vh; 
+        }   
+    }
+}
+
+
+
+
+
