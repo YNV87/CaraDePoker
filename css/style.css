@@ -15,13 +15,13 @@ body {
     height: 14.5vh; }
     @media screen and (max-width: 633px) {
       body header {
-        height: 35vh; } }
+        height: 31vh; } }
     @media screen and (max-width: 399px) {
       body header {
-        height: 31vh; } }
+        height: 27vh; } }
     @media screen and (max-width: 337px) {
       body header {
-        height: 27vh; } }
+        height: 24vh; } }
   body main {
     width: 100%;
     height: 100vh; }
@@ -101,13 +101,13 @@ body {
     height: 14.5vh; }
     @media screen and (max-width: 633px) {
       body header {
-        height: 35vh; } }
+        height: 31vh; } }
     @media screen and (max-width: 399px) {
       body header {
-        height: 31vh; } }
+        height: 27vh; } }
     @media screen and (max-width: 337px) {
       body header {
-        height: 27vh; } }
+        height: 24vh; } }
   body main {
     width: 100%;
     height: 100vh; }

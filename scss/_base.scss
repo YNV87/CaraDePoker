@@ -18,13 +18,13 @@ body{
         height: 14.5vh; 
 
         @include mediaQuery(633px){
-            height: 35vh; 
-        }
-        @include mediaQuery(399px){
             height: 31vh; 
         }
-        @include mediaQuery(337px){
+        @include mediaQuery(399px){
             height: 27vh; 
+        }
+        @include mediaQuery(337px){
+            height: 24vh; 
         }    
     }
     main{
