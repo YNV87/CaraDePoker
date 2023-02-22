@@ -5,11 +5,13 @@
 
 body {
   width: 98.7vw;
-  height: 109.5vh; }
-  @media screen and (max-width: 636px) {
+  height: 124vh; }
+  @media screen and (max-width: 633px) {
     body {
-      width: 98.7vw;
-      height: 100vh; } }
+      height: 136vh; } }
+  @media screen and (max-width: 399px) {
+    body {
+      height: 142vh; } }
   body header {
     width: 100%;
     height: 14.5vh; }
@@ -25,16 +27,19 @@ body {
   body main {
     width: 100%;
     height: 100vh; }
-    @media screen and (max-width: 607px) {
+    @media screen and (max-width: 633px) {
       body main {
-        height: 105vh; } }
-    @media screen and (max-width: 379px) {
+        height: 100h; } }
+    @media screen and (max-width: 399px) {
       body main {
         height: 110vh; } }
+    @media screen and (max-width: 337px) {
+      body main {
+        height: 113vh; } }
   body footer {
     width: 100%;
     height: 9.5vh; }
-    @media screen and (max-width: 636px) {
+    @media screen and (max-width: 633px) {
       body footer {
         height: 5vh; } }
 
@@ -91,11 +96,13 @@ body {
 
 body {
   width: 98.7vw;
-  height: 109.5vh; }
-  @media screen and (max-width: 636px) {
+  height: 124vh; }
+  @media screen and (max-width: 633px) {
     body {
-      width: 98.7vw;
-      height: 100vh; } }
+      height: 136vh; } }
+  @media screen and (max-width: 399px) {
+    body {
+      height: 142vh; } }
   body header {
     width: 100%;
     height: 14.5vh; }
@@ -111,16 +118,19 @@ body {
   body main {
     width: 100%;
     height: 100vh; }
-    @media screen and (max-width: 607px) {
+    @media screen and (max-width: 633px) {
       body main {
-        height: 105vh; } }
-    @media screen and (max-width: 379px) {
+        height: 100h; } }
+    @media screen and (max-width: 399px) {
       body main {
         height: 110vh; } }
+    @media screen and (max-width: 337px) {
+      body main {
+        height: 113vh; } }
   body footer {
     width: 100%;
     height: 9.5vh; }
-    @media screen and (max-width: 636px) {
+    @media screen and (max-width: 633px) {
       body footer {
         height: 5vh; } }
 
