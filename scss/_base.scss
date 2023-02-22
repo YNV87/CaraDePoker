@@ -25,21 +25,17 @@ body{
         @include mediaQuery(399px){
              height: 27vh; 
         }
-        @include mediaQuery(337px){
+        @include mediaQuery(379px){
             height: 24vh; 
         }    
     }
     main{
         width: 100%;
         height: 100vh;
-
-        @include mediaQuery(633px){
-             height: 100h; 
-        }
         @include mediaQuery(399px){
             height: 110vh; 
         }
-        @include mediaQuery(337px){
+        @include mediaQuery(379px){
             height: 113vh; 
         }  
     }

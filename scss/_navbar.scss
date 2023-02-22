@@ -15,13 +15,6 @@
             @include crear-flexbox(column, flex-start);
             gap: 0.15em;
         }
-        @include mediaQuery(379px){
-            gap: 0.5em;
-        }
-        @include mediaQuery(337px){
-            gap: 0.15em;
-        }
-
         .logo{
             height: 90px;
             width: 120px;

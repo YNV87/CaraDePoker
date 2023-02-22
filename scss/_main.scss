@@ -116,7 +116,7 @@
                     color: white;
                     font-size: 1.3rem;
                     @include mediaQuery(547px){
-                        font-size:0.9;
+                        font-size:1rem;
                     }
                 }
                 p{  
@@ -156,15 +156,11 @@
     
 
     .formulario{
-        width: 900px ;
-        height: 80%;
+        width: auto;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
         padding: 1.5em;
-        @include mediaQuery(920px){
-            width: auto ;
-            height: 70%;
-        }
         h1{
             text-align: center;
             font-size: 2rem; 

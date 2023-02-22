@@ -8,31 +8,28 @@
     @include mediaQuery(751px){
         @include crear-flexbox(row, center);
     }
-        .logo{
-            height: 50px;
-            width: 60px;   
-        }
+    .logo{
+        height: 50px;
+        width: 60px;   
         @include mediaQuery(314px){
-            .logo{
-                height: 25px;
-                width: 40px;   
-            }
+            height: 25px;
+            width: 40px;   
         }
-        .alPie{
-            font-family: $fuente;
-            font-size: 1rem;
-            color: white;
+    }
+    .alPie{
+        font-family: $fuente;
+        font-size: 1rem;
+        color: white;
+        @include mediaQuery(433px){
+            font-size: 0.8rem;
+        }
+    }
+    span{
+        a{
+            @include formato-enlace (1rem);
             @include mediaQuery(433px){
-                font-size: 0.8rem;
+                @include formato-enlace (0.8rem);
             }
         }
-
-        span{
-            a{
-                @include formato-enlace (1rem);
-                @include mediaQuery(433px){
-                    @include formato-enlace (0.8rem);
-                }
-            }
-        }
+    }
 }
