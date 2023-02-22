@@ -48,6 +48,14 @@ body{
     }
 }
 
+.fondo {
+    height: 100%;
+    background-image: linear-gradient(#000000b5,#000000b9), url("../assets/img/imgFondo/imagenSublimacionPpal.jpg");
+    @include crear-flexbox(row, center);
+    @include arreglar-imagen;
+    font-family: $fuente;
+}
+
 
 
 

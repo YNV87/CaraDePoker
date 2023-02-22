@@ -3,12 +3,7 @@
 
 .main{ 
     .contenedorHero{
-     height: 100%;
-     background-image: linear-gradient(#000000b5,#000000b9), url("../assets/img/imgFondo/imagenSublimacionPpal.jpg");
-     @include crear-flexbox(row, center);
-     @include arreglar-imagen;
-     font-family: $fuente;
-
+        @extend .fondo;
         .texto{
             h1{
                 color: white;
@@ -39,11 +34,8 @@
 
 .main2{
     .contenedorMain2{
-        height: 100%;  
-        background-image: linear-gradient(#000000b5,#000000b9), url('../assets/img/imgFondo/impresion.jpeg');
-        @include crear-flexbox(row, center);
-        @include arreglar-imagen;
-        font-family: $fuente;                
+        @extend .fondo; 
+        background-image: linear-gradient(#000000b5,#000000b9), url('../assets/img/imgFondo/impresion.jpeg');             
         .texto{
             h1{
                 color:white;
