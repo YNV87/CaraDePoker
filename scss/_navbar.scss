@@ -4,16 +4,15 @@
 
 .navbar{
     background-color: black;
-    
     .container{
         width:100%;
         margin:auto;
         height: 100%;
         background-color: black;
         gap: 1em;
-        @include crear-flexbox( space-around);
-        @include mediaQuery(433px){
-            @include crear-flexbox(flex-start);
+        @include crear-flexbox(row, space-around);
+        @include mediaQuery(633px){
+            @include crear-flexbox(column, flex-start);
             gap: 0.15em;
         }
         @include mediaQuery(379px){
@@ -22,6 +21,7 @@
         @include mediaQuery(337px){
             gap: 0.15em;
         }
+
         .logo{
             height: 90px;
             width: 120px;
@@ -34,14 +34,9 @@
                 width: 80px;
             }                  
         }
+
         .item{
             @include formato-enlace (1rem);
-            @include mediaQuery(433px){
-                @include formato-enlace (0.6rem);
-            }
-            @include mediaQuery(379px){
-                @include formato-enlace (0.5rem);
-            }
         }
 
     }

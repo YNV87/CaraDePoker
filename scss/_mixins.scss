@@ -1,7 +1,7 @@
 
-@mixin crear-flexbox($justify){
+@mixin crear-flexbox($direction, $justify){
     display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     align-items: center;
     flex-wrap: wrap;
     justify-content: $justify;

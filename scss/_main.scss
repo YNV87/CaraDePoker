@@ -1,26 +1,24 @@
 @import '_mixins.scss';
 @import '_base.scss';
 
-.main{
+.main{ 
     .contenedorHero{
-        height: 100%;
-        background-image: linear-gradient(#000000b5,#000000b9), url("../assets/img/imagenSublimacionPpal.jpg");
-
-        @include crear-flexbox(center);
-    
-        @include arreglar-imagen;
-        font-family: $fuente;
+     height: 100%;
+     background-image: linear-gradient(#000000b5,#000000b9), url("../assets/img/imgFondo/imagenSublimacionPpal.jpg");
+     @include crear-flexbox(row, center);
+     @include arreglar-imagen;
+     font-family: $fuente;
 
         .texto{
-            color:white;
-            .title{
-                font-size: 1rem;
-                margin-bottom: 10px;
+            h1{
+                color: white;
             }
-            .paragraph{
+            p{
                 font-size: 1rem;
-            }
+                color: white;
+            } 
             .button{
+                background-color: black;
                 height: 64px;
                 min-width: 150px;
                 border: none;
@@ -32,10 +30,7 @@
                     cursor: pointer;
                 }
                 a {
-                    color: black;
-                    text-decoration: none;
-                    font-size: 1rem;
-                    font-family: $fuente;
+                    @include formato-enlace(1rem);            
                 }
             }
         }
@@ -44,18 +39,18 @@
 
 .main2{
     .contenedorMain2{
-        background-image: linear-gradient(#000000b5,#000000b9), url('../assets/img/impresion.jpeg');
-        @include crear-flexbox(center);
         height: 100%;  
+        background-image: linear-gradient(#000000b5,#000000b9), url('../assets/img/imgFondo/impresion.jpeg');
+        @include crear-flexbox(row, center);
         @include arreglar-imagen;
         font-family: $fuente;                
         .texto{
-            h2{
+            h1{
                 color:white;
                 text-align: center;
             }
             p{
-                font-size: pixeles-rem(18);
+                font-size: 1rem;
                 color:white;
                 text-align: center;
             }
@@ -63,16 +58,15 @@
 
 
         .contenedorTarjeta{
-            width: 100%;
             max-width: 1200px;
             height: 430px;
             margin: auto;
             font-family: $fuente;                
             align-items: stretch;  
-            @include crear-flexbox(space-around);         
+            @include crear-flexbox(row, space-around);         
             .card{
                 width: 330px;
-                height: 430px;
+                height: 330px;
                 border-radius: 8px;
                 box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
                 overflow: hidden;
@@ -81,19 +75,23 @@
                 transition: all 0.25s;
                 @include mediaQuery(1124px){
                     width: 220px;
-                    height: 330px;
                     margin: 10px;
                 }
 
                 @include mediaQuery(729px){
                     width: 180px;
-                    height: 330px;
                     margin: 10px;
                 }
                 @include mediaQuery(607px){
-                    width: 90%;
-                    height: 100px;
+                    width: 300px;
+                    height: 125px;
                 }
+
+                @include mediaQuery(312px){
+                    width: 250px;
+                    height: 150px;
+                }
+
                 &:hover {
                     transform: translateY(-15px);
                     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -108,15 +106,15 @@
                     }
                     @include mediaQuery(729px){
                         width: 180px;
-                        height: 180px;
                     }
                      @include mediaQuery(607px){
                         width: 0px;
                         height: 0px;
                     }
                 }
-                h4{
+                h2{
                     color: white;
+                    font-size: 1.3rem;
                     @include mediaQuery(547px){
                         font-size:0.9;
                     }
@@ -125,12 +123,9 @@
                     background-color: white;
                     color:black;
                     padding: 16px;
-                    font-size: 0.8rem;
+                    font-size: 1.1rem;
                     @include mediaQuery(607px){
-                        font-size: 0.7rem;
-                    }
-                    @include mediaQuery(607px){
-                        font-size: 0.7rem;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -139,20 +134,18 @@
             iframe {
                 width: 600px;
                 height: 300px;
-            }
-        }
-        @include mediaQuery(636px){
-            .video{
-                iframe {
-                    width: 300px;
+                @include mediaQuery(636px){
+                    width: 450px;
                     height: 200px;
                     margin-bottom: 10px;
+                }           
+                @include mediaQuery(500px){
+                    width: 300px;
                 }
             }
-        }   
+        }
     }
 }
-
 
 .main3{
     background: #181818;
@@ -201,8 +194,6 @@
                     grid-template-rows: 0.5fr; 
                     p{
                         margin: 0;
-                        padding: 1rem;
-
                         label {
                             display: block;
                         }
@@ -233,7 +224,7 @@
             }
             .InfoDeContacto{
                 background-color: #000;
-                h3 {
+                h2 {
                     text-align: center;
                 }
                 ul {

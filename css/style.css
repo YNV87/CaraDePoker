@@ -13,43 +13,29 @@ body {
   body header {
     width: 100%;
     height: 14.5vh; }
-    @media screen and (max-width: 627px) {
+    @media screen and (max-width: 633px) {
       body header {
-        width: 100%;
-        height: 23.3vh; } }
-    @media screen and (max-width: 433px) {
-      body header {
-        width: 100%;
-        height: 17vh; } }
+        height: 31vh; } }
     @media screen and (max-width: 399px) {
       body header {
-        width: 100%;
-        height: 13vh; } }
-    @media screen and (max-width: 379px) {
+        height: 27vh; } }
+    @media screen and (max-width: 337px) {
       body header {
-        width: 100%;
-        height: 9vh; } }
+        height: 24vh; } }
   body main {
     width: 100%;
-    height: 85vh; }
-    @media screen and (max-width: 627px) {
+    height: 100vh; }
+    @media screen and (max-width: 607px) {
       body main {
-        width: 100%;
-        height: 94vh; } }
-    @media screen and (max-width: 535px) {
+        height: 105vh; } }
+    @media screen and (max-width: 379px) {
       body main {
-        width: 100%;
-        height: 100vh; } }
+        height: 110vh; } }
   body footer {
     width: 100%;
-    height: 10vh; }
+    height: 9.5vh; }
     @media screen and (max-width: 636px) {
       body footer {
-        width: 100%;
-        height: 5h; } }
-    @media screen and (max-width: 433px) {
-      body footer {
-        width: 100%;
         height: 5vh; } }
 
 .navbar {
@@ -65,10 +51,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around; }
-    @media screen and (max-width: 433px) {
+    @media screen and (max-width: 633px) {
       .navbar .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -97,22 +83,6 @@ body {
       font-size: 1rem; }
       .navbar .container .item:hover {
         color: red; }
-      @media screen and (max-width: 433px) {
-        .navbar .container .item {
-          color: white;
-          text-decoration: none;
-          font-family: "Courier New";
-          font-size: 0.6rem; }
-          .navbar .container .item:hover {
-            color: red; } }
-      @media screen and (max-width: 379px) {
-        .navbar .container .item {
-          color: white;
-          text-decoration: none;
-          font-family: "Courier New";
-          font-size: 0.5rem; }
-          .navbar .container .item:hover {
-            color: red; } }
 
 * {
   margin: 0;
@@ -129,48 +99,34 @@ body {
   body header {
     width: 100%;
     height: 14.5vh; }
-    @media screen and (max-width: 627px) {
+    @media screen and (max-width: 633px) {
       body header {
-        width: 100%;
-        height: 23.3vh; } }
-    @media screen and (max-width: 433px) {
-      body header {
-        width: 100%;
-        height: 17vh; } }
+        height: 31vh; } }
     @media screen and (max-width: 399px) {
       body header {
-        width: 100%;
-        height: 13vh; } }
-    @media screen and (max-width: 379px) {
+        height: 27vh; } }
+    @media screen and (max-width: 337px) {
       body header {
-        width: 100%;
-        height: 9vh; } }
+        height: 24vh; } }
   body main {
     width: 100%;
-    height: 85vh; }
-    @media screen and (max-width: 627px) {
+    height: 100vh; }
+    @media screen and (max-width: 607px) {
       body main {
-        width: 100%;
-        height: 94vh; } }
-    @media screen and (max-width: 535px) {
+        height: 105vh; } }
+    @media screen and (max-width: 379px) {
       body main {
-        width: 100%;
-        height: 100vh; } }
+        height: 110vh; } }
   body footer {
     width: 100%;
-    height: 10vh; }
+    height: 9.5vh; }
     @media screen and (max-width: 636px) {
       body footer {
-        width: 100%;
-        height: 5h; } }
-    @media screen and (max-width: 433px) {
-      body footer {
-        width: 100%;
         height: 5vh; } }
 
 .main .contenedorHero {
   height: 100%;
-  background-image: linear-gradient(#000000b5, #000000b9), url("../assets/img/imagenSublimacionPpal.jpg");
+  background-image: linear-gradient(#000000b5, #000000b9), url("../assets/img/imgFondo/imagenSublimacionPpal.jpg");
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -180,50 +136,50 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Courier New"; }
-  .main .contenedorHero .texto {
+  .main .contenedorHero .texto h1 {
     color: white; }
-    .main .contenedorHero .texto .title {
-      font-size: 1rem;
-      margin-bottom: 10px; }
-    .main .contenedorHero .texto .paragraph {
+  .main .contenedorHero .texto p {
+    font-size: 1rem;
+    color: white; }
+  .main .contenedorHero .texto .button {
+    background-color: black;
+    height: 64px;
+    min-width: 150px;
+    border: none;
+    border-radius: 40px;
+    margin: 8px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.5s all ease-in-out; }
+    .main .contenedorHero .texto .button:hover {
+      cursor: pointer; }
+    .main .contenedorHero .texto .button a {
+      color: white;
+      text-decoration: none;
+      font-family: "Courier New";
       font-size: 1rem; }
-    .main .contenedorHero .texto .button {
-      height: 64px;
-      min-width: 150px;
-      border: none;
-      border-radius: 40px;
-      margin: 8px;
-      box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
-      transition: 0.5s all ease-in-out; }
-      .main .contenedorHero .texto .button:hover {
-        cursor: pointer; }
-      .main .contenedorHero .texto .button a {
-        color: black;
-        text-decoration: none;
-        font-size: 1rem;
-        font-family: "Courier New"; }
+      .main .contenedorHero .texto .button a:hover {
+        color: red; }
 
 .main2 .contenedorMain2 {
-  background-image: linear-gradient(#000000b5, #000000b9), url("../assets/img/impresion.jpeg");
+  height: 100%;
+  background-image: linear-gradient(#000000b5, #000000b9), url("../assets/img/imgFondo/impresion.jpeg");
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Courier New"; }
-  .main2 .contenedorMain2 .texto h2 {
+  .main2 .contenedorMain2 .texto h1 {
     color: white;
     text-align: center; }
   .main2 .contenedorMain2 .texto p {
-    font-size: pixeles-rem(18);
+    font-size: 1rem;
     color: white;
     text-align: center; }
   .main2 .contenedorMain2 .contenedorTarjeta {
-    width: 100%;
     max-width: 1200px;
     height: 430px;
     margin: auto;
@@ -236,7 +192,7 @@ body {
     justify-content: space-around; }
     .main2 .contenedorMain2 .contenedorTarjeta .card {
       width: 330px;
-      height: 430px;
+      height: 330px;
       border-radius: 8px;
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       overflow: hidden;
@@ -246,17 +202,19 @@ body {
       @media screen and (max-width: 1124px) {
         .main2 .contenedorMain2 .contenedorTarjeta .card {
           width: 220px;
-          height: 330px;
           margin: 10px; } }
       @media screen and (max-width: 729px) {
         .main2 .contenedorMain2 .contenedorTarjeta .card {
           width: 180px;
-          height: 330px;
           margin: 10px; } }
       @media screen and (max-width: 607px) {
         .main2 .contenedorMain2 .contenedorTarjeta .card {
-          width: 90%;
-          height: 100px; } }
+          width: 300px;
+          height: 125px; } }
+      @media screen and (max-width: 312px) {
+        .main2 .contenedorMain2 .contenedorTarjeta .card {
+          width: 250px;
+          height: 150px; } }
       .main2 .contenedorMain2 .contenedorTarjeta .card:hover {
         transform: translateY(-15px);
         box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
@@ -269,36 +227,36 @@ body {
             height: 180px; } }
         @media screen and (max-width: 729px) {
           .main2 .contenedorMain2 .contenedorTarjeta .card img {
-            width: 180px;
-            height: 180px; } }
+            width: 180px; } }
         @media screen and (max-width: 607px) {
           .main2 .contenedorMain2 .contenedorTarjeta .card img {
             width: 0px;
             height: 0px; } }
-      .main2 .contenedorMain2 .contenedorTarjeta .card h4 {
-        color: white; }
+      .main2 .contenedorMain2 .contenedorTarjeta .card h2 {
+        color: white;
+        font-size: 1.3rem; }
         @media screen and (max-width: 547px) {
-          .main2 .contenedorMain2 .contenedorTarjeta .card h4 {
+          .main2 .contenedorMain2 .contenedorTarjeta .card h2 {
             font-size: 0.9; } }
       .main2 .contenedorMain2 .contenedorTarjeta .card p {
         background-color: white;
         color: black;
         padding: 16px;
-        font-size: 0.8rem; }
+        font-size: 1.1rem; }
         @media screen and (max-width: 607px) {
           .main2 .contenedorMain2 .contenedorTarjeta .card p {
-            font-size: 0.7rem; } }
-        @media screen and (max-width: 607px) {
-          .main2 .contenedorMain2 .contenedorTarjeta .card p {
-            font-size: 0.7rem; } }
+            font-size: 1rem; } }
   .main2 .contenedorMain2 .video iframe {
     width: 600px;
     height: 300px; }
-  @media screen and (max-width: 636px) {
-    .main2 .contenedorMain2 .video iframe {
-      width: 300px;
-      height: 200px;
-      margin-bottom: 10px; } }
+    @media screen and (max-width: 636px) {
+      .main2 .contenedorMain2 .video iframe {
+        width: 450px;
+        height: 200px;
+        margin-bottom: 10px; } }
+    @media screen and (max-width: 500px) {
+      .main2 .contenedorMain2 .video iframe {
+        width: 300px; } }
 
 .main3 {
   background: #181818;
@@ -340,8 +298,7 @@ body {
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 0.5fr; }
           .main3 .formulario .formularioGral .formularioDeContacto form p {
-            margin: 0;
-            padding: 1rem; }
+            margin: 0; }
             .main3 .formulario .formularioGral .formularioDeContacto form p label {
               display: block; }
             .main3 .formulario .formularioGral .formularioDeContacto form p input {
@@ -385,7 +342,7 @@ body {
               outline: 0; }
       .main3 .formulario .formularioGral .InfoDeContacto {
         background-color: #000; }
-        .main3 .formulario .formularioGral .InfoDeContacto h3 {
+        .main3 .formulario .formularioGral .InfoDeContacto h2 {
           text-align: center; }
         .main3 .formulario .formularioGral .InfoDeContacto ul {
           list-style: none;

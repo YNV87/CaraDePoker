@@ -4,9 +4,9 @@
     background-color: black;
     width:auto;
     height: auto;
-    @include crear-flexbox(flex-start);
+    @include crear-flexbox(row, flex-start);
     @include mediaQuery(751px){
-        @include crear-flexbox(center);
+        @include crear-flexbox(row, center);
     }
         .logo{
             height: 50px;
