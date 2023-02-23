@@ -106,10 +106,7 @@
                 }
                 h2{
                     color: white;
-                    font-size: 1.3rem;
-                    @include mediaQuery(547px){
-                        font-size:1rem;
-                    }
+                    font-size: 1.2rem;
                 }
                 p{  
                     background-color: white;
@@ -117,7 +114,7 @@
                     padding: 16px;
                     font-size: 1.1rem;
                     @include mediaQuery(607px){
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
