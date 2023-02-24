@@ -174,7 +174,7 @@ body {
     color: white;
     text-align: center; }
   .main2 .contenedorMain2 .texto p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: white;
     text-align: center; }
   .main2 .contenedorMain2 .contenedorTarjeta {
@@ -240,7 +240,7 @@ body {
         font-size: 1.1rem; }
         @media screen and (max-width: 607px) {
           .main2 .contenedorMain2 .contenedorTarjeta .card p {
-            font-size: 1.2rem; } }
+            font-size: 1rem; } }
   .main2 .contenedorMain2 .video iframe {
     width: 600px;
     height: 300px; }
